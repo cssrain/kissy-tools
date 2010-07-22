@@ -1,0 +1,42 @@
+#set ($prefixIsMsn = false)
+#if ($rundata && $rundata.request && $rundata.request.getServerName() && $rundata.request.getServerName().indexOf('msn') != -1)
+    #set ($prefixIsMsn = true)
+#end
+
+##如果是MSN的链接，显示MSN风格的页头
+#if ($prefixIsMsn)
+    ##调用MSN的头
+    $control.setTemplate("vmcommon/top/topcontent/msn.vm").setParameter('category',$!category)
+
+##普通访问的链接
+#else
+<div id="header">
+    ##系统公告
+    #if($cmsTool.isExists('static/annoucement.txt'))
+        $cmsTool.getContent('static/annoucement.txt')
+    #end
+
+    <div class="header-top">
+        ##登录信息（你好，XXX-退出-站内信等）class:quick-link
+        ##$control.setTemplate("vmcommon/top/topcontent/navigate_v2.vm")
+		##增加彩票参数 by yubo for 怜花 20090204
+		$control.setTemplate("vmcommon/top/topcontent/navigate_v2.vm").setParameter('caipiaoLoginUrl',$!caipiaoLoginUrl).setParameter('caipiaoLogoutUrl',$!caipiaoLogoutUrl)
+
+        ##导航栏（我要买-我要卖-我的淘宝-支付宝-阿里旺旺-帮助中心-更多服务等)class:quick-menu
+        $control.setTemplate("vmcommon/top/topcontent/quickLink_v2.vm").setParameter('isKerinic',$isKerinic)
+
+        ##搜索，匹配关键字class:search-main and hot-keywords
+        $control.setTemplate("vmcommon/top/topcontent/search.vm").setParameter('asq',${asq}).setParameter('cat',${cat}).setParameter('categoryPathList',${categoryPathList}).setParameter('propertyPathList',${propertyPathList}).setParameter('hostName',${asq.hostName}).setParameter('specialKeyList',${specialKeyList}).setParameter('showChannel',${showChannel})
+    </div>
+
+    ##淘宝各个频道（首页-淘宝商城-手机数码等等）class:nav-main
+    #if ($!showChannel)
+        $control.setTemplate("vmcommon/top/topcontent/channel.vm")
+    #end
+
+    ##外部系统需要显示频道
+    #if ($!sysNeedChannel)
+        $control.setTemplate("channel.vm")
+    #end
+</div><!-- end of header -->
+#end

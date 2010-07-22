@@ -1,0 +1,16 @@
+[Version]
+Signature="$CHICAGO$"
+Provider=lifesinger@gmail.com, 2009
+
+[DefaultInstall]
+AddReg=Install_AddReg
+
+[DefaultUnInstall]
+DelReg=Uninstall_DelReg
+
+[Uninstall_DelReg]
+hkcr,"*\Shell\CSSEmbed"
+
+[Install_AddReg]
+hkcr,"*\Shell\CSSEmbed",,,"Process with CSS&Embed"
+hkcr,"*\Shell\CSSEmbed\command",,,"""%01%\cssembed.cmd"" ""%%1"""

@@ -1,0 +1,21 @@
+[Version]
+Signature="$CHICAGO$"
+Provider=lifesinger@gmail.com, 2010
+
+[DefaultInstall]
+AddReg=install_AddReg
+
+[DefaultUnInstall]
+DelReg=uninstall_DelReg
+
+[install_AddReg]
+hkcr,"*\Shell\PNGOUT",,,"Process with &PNGOUT"
+hkcr,"*\Shell\PNGOUT\command",,,"""%01%\pngout.cmd"" ""%%1"""
+
+hkcr,"Directory\Shell\PNGOUT",,,"Process with &PNGOUT"
+hkcr,"Directory\Shell\PNGOUT\command",,,"""%01%\pngout.cmd"" ""%%1"""
+
+[uninstall_DelReg]
+hkcr,"*\Shell\PNGOUT"
+hkcr,"Directory\Shell\PNGOUT"
+

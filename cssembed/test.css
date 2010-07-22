@@ -1,0 +1,649 @@
+/*! vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=gbk filetype=css: */
+/**
+ * 我的淘宝首页 CSS
+ *
+ * @author mingcheng@taobao.com
+ * @date   2009-06-12
+ */
+
+/**
+ * 提醒区
+ */
+.mytaobao-notice {
+    overflow: hidden;
+    position: relative;
+    *zoom: 1;
+}
+
+.mytaobao-notice .sec {
+    position: relative;
+    padding: 5px 0px 7px 80px;
+    border-top: 1px dotted #ccc;
+    margin: -1px 0px 0px 0px;
+}
+
+.mytaobao-notice .sec h4 {
+    color: #409040;
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    left: 0px;
+    _left: -80px;
+    text-align: right;
+    width: 70px;
+}
+
+.mytaobao-notice .sec ul {
+    *zoom: 1;
+    margin: 0px 0px 2px 0px;
+}
+
+.mytaobao-notice .sec li {
+    margin: 0px 0px 3px 0px;
+float: left;
+width: 135px;
+line-height: 18px;
+}
+
+.mytaobao-notice .sec li em {
+    color: #f60;
+    padding: 0px;
+    font-weight: 700;
+}
+
+
+.mytaobao-notice .sec li em.none {
+    color: #999;
+}
+
+/**
+ * 卖家、买家步骤条
+ */
+.beginner-step {
+    background: url(http://a.tbcdn.cn/app/mytaobao/img/beginner_step.png) no-repeat scroll 1000px 1000px;
+    height: 50px;
+    position: relative;
+    width: 510px;
+}
+
+.beginner-step li {
+    width: 75px;
+    height: 40px;
+    position: absolute;
+    top: 4px;
+}
+
+.beginner-step li a {
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+}
+
+.beginner-step li.step1 {
+    left: 0px;
+    display: none;
+}
+
+.beginner-step li.step2 {
+    left: 108px;
+}
+
+.beginner-step li.step3 {
+    left: 217px;
+}
+
+.beginner-step li.step4 {
+    left: 325px;
+
+}
+.beginner-step li.step5 {
+    left: 433px;
+}
+
+.beginner-step a:hover {
+    text-decoration: none;
+}
+
+.beginner-step-buyer {
+    background-position: -4px 2px;
+}
+
+.beginner-step-buyer a {
+    color: #8c6601;
+}
+
+.beginner-step-seller {
+    background-position: -4px -52px;
+}
+
+.beginner-step-seller a {
+    color: #036aac;
+}
+
+/**
+ * 常用问题列表
+ */
+.faq-list {
+    *zoom: 1;
+}
+
+.faq-list li {
+    float: left;
+    margin: 0px 5px 5px 10px;
+    width: 225px;
+    height: 20px;
+    overflow: hidden;
+    background: url(http://a.tbcdn.cn/app/mytaobao/img/mytaobao_top_nav.png) no-repeat scroll 0 -132px;
+    padding: 0px 0px 0px 10px;
+}
+
+/* 右侧样式 */
+#mytaobao-extra .mytaobao-bd {
+    padding: 5px 4px;
+}
+
+#mytaobao-extra .section {
+    margin: 0px 0px 10px 0px;
+}
+
+#mytaobao-extra .mytaobao-list {
+    margin: 0px 0px 0px 10px;
+}
+
+#mytaobao-extra .banner {
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+}
+
+#mytaobao-extra .inquiry {
+    padding: 0px 10px;
+}
+
+#mytaobao-extra .inquiry p {
+    margin: 5px 0px;
+}
+
+#mytaobao-extra .inquiry .desp {
+    color: #999;
+}
+
+#mytaobao-extra .inquiry textarea {
+    width: 195px;
+    height: 120px;
+    overflow: auto;
+}
+
+#mytaobao-extra .inquiry .submit {
+    margin: 5px 0px;
+    text-align: center;
+}
+
+.main-wrap .chapter {
+    margin: 0px 0px 20px 0px;
+    width: 510px;
+    overflow: hidden;
+}
+
+.main-wrap .chapter .beginner-step {
+    /*
+    margin: 5px 0px;
+    */
+    margin: 5px 0px 5px -50px;
+}
+
+#beginner-seller-notice, #beginner-buyer-notice {
+    overflow: hidden;
+    *position: relative;
+}
+
+#beginner-buyer-notice {
+    height: 140px;
+    overflow: hidden;
+}
+
+/** 个人信息 **/
+#personal-info {
+    margin: 0px 0px 10px 0px;
+}
+
+#personal-info .mytaobao-bd {
+    padding: 10px 10px 10px 100px;
+}
+
+.main-wrap #personal-info .mytaobao-bd {
+    width: 398px;
+    min-height: 82px;
+    _height: 82px;
+    _overflow: visible;
+}
+
+#personal-info h4 {
+    color: #f60;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Microsoft Yahei', 'Yahei', 'Simhei';
+}
+
+#personal-info ul span {
+    color: #409040;
+}
+
+#personal-info ul a {
+    color: #f60;
+}
+
+#personal-info li {
+    margin: 3px 0px;
+}
+
+#personal-info ul a:hover {
+    text-decoration: none;
+}
+
+#personal-info ul a img {
+    vertical-align:bottom;
+    margin: 0px 5px;
+}
+
+#personal-info .avatar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #c5dce7;
+    padding: 1px;
+    width: 80px;
+    height: 80px;
+    z-index: 999;
+    _overflow: hidden;
+}
+
+#personal-info .avatar a.modify {
+    position: absolute;
+    background: #fff;
+    width: 82px;
+    text-align: center;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.75; 
+    visibility: hidden;
+    *filter:alpha(opacity=75);
+    *zoom: 1;
+}
+
+#personal-info .avatar.hover a.modify,
+#personal-info .avatar:hover a.modify {
+    visibility: visible;
+}
+
+
+/** 支付宝专区 **/
+#alisoft .alisoft-shop,
+#alisoft .alisoft-shop .items li,
+#alipay-notice .alipay-manage li, #alipay-notice .alipay-manage {
+    background: url(http://a.tbcdn.cn/app/mytaobao/img/alipay_bg.png) no-repeat scroll 1000px 1000px;
+}
+
+#alipay-notice .alipay-manage {
+    background-position: -135px 5px;
+    height: 70px;
+    padding: 0px 0px 0px 80px;
+}
+
+#alisoft .alisoft-shop ul.items,
+#alipay-notice .alipay-manage ul {
+    overflow: hidden;
+    *zoom: 1;
+}
+
+#alisoft .alisoft-shop .items li,
+#alipay-notice .alipay-manage li {
+    float: left;
+    background-position: 0px 0px;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+#alipay-notice .alipay-manage h4 {
+    font-weight: normal;
+    margin: 10px 5px;
+}
+
+
+/**
+ * 阿里网店专区
+ */
+#alisoft .alisoft-shop {
+    padding: 10px 5px 5px 80px;
+    color: #555;
+    background-position: -135px -105px;
+}
+
+#alisoft .alisoft-shop h4 {
+    font-weight: 500;
+    margin: 0px 5px;
+}
+
+#alisoft .alisoft-shop dl {
+    padding: 5px 5px 5px 5px;
+}
+
+#alisoft .alisoft-shop dd {
+    color: #333;
+}
+
+#alisoft .alisoft-shop dd ul {
+    overflow: hidden;
+    *zoom: 1;
+    margin: 5px 0px 0px 2em;
+}
+
+#alisoft .alisoft-shop dd li {
+    width: 180px;
+    float: left;
+    line-height: 18px;
+    color: #333;
+    _position: relative;
+}
+
+#alisoft .alisoft-shop .desc {
+    padding: 1px 5px 1px 5px;
+}
+
+#alisoft .alisoft-shop ul.items {
+    margin: 10px 0px 0px 0px;
+}
+
+#alisoft em, #alisoft .alinum {
+    color: #f60;
+}
+
+/** 下方宝贝列表 **/
+#baobei-list {
+
+}
+
+.item-container {
+    *zoom: 1;
+}
+
+.item-container:after {
+	content:"";
+	display:block;
+	clear:both;
+	height:0;
+}
+
+
+.item-container .item {
+    float: left;
+    width: 150px;
+    margin: 10px 5px 0px 5px;
+    *margin: 10px 2.5px 0px 2.5px;
+}
+
+.item-container-120 .item {
+    width: 120px;
+    margin: 10px 3px 0px 3px;
+}
+
+.item-container .item .pic {
+    border: none;
+}
+
+#baobei-list .more {
+    clear: both;
+    background: transparent;
+    text-align: right;
+}
+
+/** 宽屏版本 **/
+#page2 .main-wrap #personal-info .mytaobao-bd {
+    width: auto;
+}
+
+#page2 .main-wrap .chapter {
+    width: auto;
+}
+
+/**
+ * 消费者保障服务 form zhengchun@mytaobao_v2.css
+ *      by mingcheng@taobao.com 2009-07-16
+ *
+ * @see http://www.taobao.com/home/css/mytaobao/mytaobao_v2.source.css
+ * */
+#CustomerZone {
+	clear: both;
+	height: auto !important;
+	margin: 0 10px;
+	margin-bottom: 2em;
+	min-height: 100px;
+	padding: 0;
+    color: #404040;
+}
+
+#CustomerZone a {
+    color: #36c;
+}
+
+#CustomerZone .services {
+	background: transparent url(http://a.tbcdn.cn/sys/common/icon/trade/xb_l.png) no-repeat scroll 18px 0;
+	clear: both;
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 12px;
+	margin-right: 20px;
+	padding-left: 82px;
+	min-height: 53px;
+	_height: 53px;
+	line-height: 1.5em;
+}
+#CustomerZone .services em {
+	font-weight: normal;
+}
+#CustomerZone .services em em {
+	font-weight: bold;
+}
+
+#CustomerZone .events {
+	clear: both;
+	margin-left: 5px;
+	margin-right: 1em;
+	margin-bottom: 5px;
+	padding-left: 1em;
+}
+#CustomerZone .events li {
+	list-style-type: circle;
+	line-height: 1.5em;
+	margin-bottom: 6px;
+	clear: both;
+}
+#CustomerZone .events em {
+	font-weight: normal;
+}
+#CustomerZone .events em em {
+	font-weight: bold;
+}
+#CustomerZone .xiaobao {
+	margin-top: 5px;
+	clear: both;
+    overflow: hidden;
+    *zoom: 1;
+}
+
+#CustomerZone .xiaobao li {
+	background: transparent url(http://a.tbcdn.cn/img/app/hesper/list_20090420.png) scroll no-repeat 0 100px;
+	line-height: 18px;
+	padding-left: 18px;
+	float: left;
+	width: 70px;
+	list-style-type: none;
+	clear: none;
+}
+
+#CustomerZone .xiaobao .refund7days {
+	background-position: -386px -192px;
+}
+#CustomerZone .xiaobao .actual {
+	background-position: -386px -160px;
+}
+#CustomerZone .xiaobao .thunder {
+	background-position: -386px -224px;
+}
+#CustomerZone .xiaobao .genuine {
+	background-position: -386px -256px;
+}
+#CustomerZone .xiaobao .pay3 {
+	background-image: url(http://img01.taobaocdn.com/tps/i1/T1zc0hXipE_tL9FEUl_16_16.png);
+	background-position: 0 1px;
+}
+#CustomerZone .xiaobao .repair30days {
+	background-position: -386px -288px;
+}
+#CustomerZone .detail {
+	margin-left: 20px;
+	width: 370px;
+}
+#CustomerZone .detail caption {
+	padding-bottom: 6px;
+}
+#CustomerZone .detail th, #CustomerZone .detail td {
+	border: 1px solid #FFE0B0;
+	text-align: center;
+}
+#CustomerZone .detail th {
+	background-color: #FFF3B9;
+	line-height: 22px;
+}
+#CustomerZone .detail td {
+	color: #F50;
+	line-height: 24px;
+}
+
+#CustomerZone .detail td a,
+#CustomerZone .detail td em {
+    /*
+	font-weight: bold;
+    */
+    color: #404040;
+}
+
+#CustomerZone p {
+	margin-left: 20px;
+	margin-top: 8px;
+}
+
+/** 便民中心 **/
+#expressway-fp {
+    border: 1px solid #a7c6d5;
+    background-color: #fff;
+    margin: 5px 5px;
+    height: 220px;
+    overflow: hidden;
+}
+
+#expressway-fp ul {
+    overflow: hidden;
+    *zoom: 1;
+    margin: 0px 0px 5px 0px;
+}
+
+#expressway-fp li {
+    float: left;
+    border-bottom: 1px solid #a7c6d5;
+    border-left: 1px solid #a7c6d5;
+    margin-left: -2px;
+    background: url(http://a.tbcdn.cn/app/mytaobao/img/mytaobao_menu_icons.png) repeat-x scroll 0px -394px;
+}
+
+#expressway-fp li.selected {
+    border-bottom: 1px solid #fff;
+    background: none;
+}
+
+#expressway-fp li a {
+    width: 80px;
+    display: block;
+    text-align: center;
+    outline: none;
+    line-height: 20px;
+    height: 20px;
+}
+
+#expressway-fp li.selected a {
+    color: #404040;
+    cursor: default;
+}
+
+#expressway-fp li.expway-game a {
+    width: 78px;
+}
+
+#expressway-fp li.expway-mobile a {
+    width: 78px;
+}
+
+#expressway-fp li.expway-air a {
+    width: 57px;
+}
+
+#expressway-fp li a:hover {
+    text-decoration: none;
+}
+
+    /*
+#expressway-fp div.select-bd {
+    height: 250px;
+}
+    */
+
+#expressway-fp div.select-bd iframe {
+    width: 208px;
+    /*
+    height: 250px;
+    */
+}
+
+/** 广告位居中 **/
+.AdPanel {
+    margin: 0px auto;
+    text-align: center;
+}
+/*Tips*/
+	.Itips{
+	width:933px;
+	height:39px;
+	background:#FEF7DB;
+	border:1px solid #FBECB3;
+	margin-top:8px;
+	margin-bottom:11px;
+	line-height:39px;
+	padding-left:13px;
+	vertical-align:middle;
+}
+.Itips .close{
+	float:right;
+	margin-right:3px;
+	margin-top:3px;
+	width:11px;
+	height:11px;
+	position:relative;
+	border:0px;
+	background:url('http://demo.ued.taobao.net/ziya/assets/app/mytaobao/img/myclose.gif') no-repeat;
+	cursor:pointer;
+}
+.Itips b{
+	font-size:14px;
+}
+.Itips .Itips-btn{
+	border:0px;
+	height:20px;
+	width:83px;
+	color:#fff;
+	margin-top:8px;
+	background:url('http://demo.ued.taobao.net/ziya/assets/app/mytaobao/img/myTipBtn.gif') no-repeat;
+}
